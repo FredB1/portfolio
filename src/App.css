@@ -42,6 +42,45 @@ nav {
   margin: 0 1em;
   width: 40vw;
   justify-content: space-evenly;
+  transition: ease 2s;
+}
+.socials > *:hover {
+  animation: shake 2s;
+}
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
 .Linkedin {
   color: #0e76a8;
@@ -58,5 +97,9 @@ nav {
   flex-direction: column;
 }
 .navOn a {
-  padding: 0.1em 0;
+  padding: 0.25em 0;
+  color: #000;
+}
+.active {
+  text-decoration: underline double hsl(28, 66%, 57%);
 }

@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubAlt, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faBars } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 const Header = () => {
   const [toggler, setToggler] = useState(false);
 
@@ -37,9 +37,30 @@ const Header = () => {
         size="2x"
       />
       <div className={toggled}>
-        <a href="">bob bucher</a>
-        <a href="">bob bucher</a>
-        <a href="">bob bucher</a>
+        <NavLink
+          exact="true"
+          to="/"
+          activeclassname="active"
+          className="navLinks"
+        >
+          HOME
+        </NavLink>
+        <NavLink
+          to="/about"
+          exact="true"
+          activeclassname="active"
+          className="navLinks"
+        >
+          ABOUT
+        </NavLink>
+        <NavLink
+          to="/contact"
+          exact="true"
+          activeclassname="active"
+          className="navLinks"
+        >
+          CONTACT
+        </NavLink>
       </div>
     </nav>
   );
