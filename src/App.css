@@ -1,0 +1,105 @@
+.App {
+  margin: 0.5em;
+}
+nav {
+  margin: -0.5em;
+  display: flex;
+  flex-wrap: wrap;
+  background: rgb(3, 37, 108);
+  background: linear-gradient(
+    260deg,
+    hsl(221, 95%, 22%) 0%,
+    hsl(228, 66%, 42%) 6%,
+    hsl(207, 76%, 38%) 20%,
+    hsl(208, 79%, 76%) 65%,
+    hsl(208, 79%, 76%) 100%
+  );
+  border-bottom: 1px solid hsl(0, 0%, 50%);
+  justify-content: space-evenly;
+  align-items: center;
+}
+.brand {
+  color: hsl(0, 0%, 30%);
+}
+.brand h1 {
+  font-family: "Cormorant";
+  margin: 0 0.05em;
+  font-size: 2rem;
+  box-shadow: black;
+}
+.brand h4 {
+  font-family: "Roboto";
+  margin: 0 0.25em;
+  font-size: 0.85rem;
+}
+.brand a {
+  color: inherit;
+  text-decoration: inherit;
+}
+.socials {
+  align-items: center;
+  display: flex;
+  margin: 0 1em;
+  width: 40vw;
+  justify-content: space-evenly;
+  transition: ease 2s;
+}
+.socials > *:hover {
+  animation: shake 2s;
+}
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+.Linkedin {
+  color: #0e76a8;
+}
+.fa {
+  color: black;
+}
+.noNav {
+  display: none;
+}
+.navOn {
+  margin-top: 0.5em;
+  display: flex;
+  flex-direction: column;
+}
+.navOn a {
+  padding: 0.25em 0;
+  color: #000;
+}
+.active {
+  text-decoration: underline double hsl(28, 66%, 57%);
+}
