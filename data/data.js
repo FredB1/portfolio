@@ -1,5 +1,5 @@
 const projects = [
-    {
+    {id: "1",
         title: "Project 1",
         summary: "This is a summary of project 1",
         technologies: "React, Node.js, GraphQL",
@@ -7,7 +7,7 @@ const projects = [
         role: "Full Stack Developer",
         image: "project1.png"
     },
-    {
+    {id: "2",
         title: "Project 2",
         summary: "This is a summary of project 2",
         technologies: "Java, Spring Boot, MySQL",
@@ -15,7 +15,7 @@ const projects = [
         role: "Backend Developer",
         image: "project2.png"
     },
-    {
+    {id: "3",
         title: "Project 3",
         summary: "This is a summary of project 3",
         technologies: "Vue.js, Nuxt.js, Firebase",
@@ -23,7 +23,7 @@ const projects = [
         role: "Frontend Developer",
         image: "project3.png"
     },
-    {
+    {id: "4",
         Title: "E-commerce Website Redesign",
         Summary: "Led the redesign of an e-commerce website, resulting in a 50% increase in sales and improved user experience.",
         Technologies: "React, Node.js, Express, MongoDB, Stripe",
@@ -31,7 +31,7 @@ const projects = [
         Role: "Lead Developer",
         Image: "ecommerce-redesign.jpg"
     },
-    {
+    {id: "5",
         Title: "Streaming Platform Development",
         Summary: "Developed a streaming platform for live events, allowing users to purchase tickets and stream events in real-time.",
         Technologies: "Angular, Firebase, Stripe",
@@ -39,7 +39,7 @@ const projects = [
         Role: "Full Stack Developer",
         Image: "streaming-platform.jpg"
     },
-    {
+    {id: "6",
         Title: "Fitness Tracker App",
         Summary: "Designed and developed a fitness tracking app that allows users to log their workouts, set goals, and track progress.",
         Technologies: "React Native, Firebase, GraphQL",
@@ -47,7 +47,7 @@ const projects = [
         Role: "Lead Developer",
         Image: "fitness-tracker.jpg"
     },
-    {
+    {id: "7",
         Title: "Job Board Platform",
         Summary: "Developed a job board platform that connects job seekers with employers, allowing them to search and apply for jobs.",
         Technologies: "Vue.js, Node.js, Express, MySQL",
@@ -55,7 +55,7 @@ const projects = [
         Role: "Full Stack Developer",
         Image: "job-board.jpg"
     },
-    {
+    {id: "8",
         Title: "Chatbot for Customer Support",
         Summary: "Developed a chatbot for customer support, reducing response time and increasing customer satisfaction.",
         Technologies: "JavaScript, Dialogflow, Firebase",
