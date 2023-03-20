@@ -1,0 +1,8 @@
+
+.about_heading {
+    @apply text-2xl font-semibold text-blue-600 text-center pt-4;
+  }
+  
+  .about_paragraph {
+    @apply text-lg text-gray-700 leading-relaxed pt-4 w-2/5 mx-auto text-justify;
+  }
