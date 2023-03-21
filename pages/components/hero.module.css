@@ -11,7 +11,7 @@
 }
 
 .hero__button {
-  @apply text-2xl cursor-pointer text-white bg-black bg-opacity-50 p-2 rounded-full mx-2 select-none z-10 transition-transform ease-in-out duration-300;
+  @apply text-4xl cursor-pointer text-white bg-black bg-opacity-50 p-2 rounded-full mx-2 select-none z-10 transition-transform ease-in-out duration-300;
 }
 
 .hero__button:hover {
