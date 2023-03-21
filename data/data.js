@@ -5,7 +5,7 @@ const projects = [
         technologies: ["React", "Node.js", "GraphQL"],
         url: "https://project1.com",
         role: "Full Stack Developer",
-        image: "code.jpg"
+        image: "image_original.png"
     },
     {id: "2",
         title: "Project 2",
@@ -13,7 +13,7 @@ const projects = [
         technologies: ["Java", "Spring Boot", "MySQL"],
         url: "https://project2.com",
         role: "Backend Developer",
-        image: "project2.png"
+        image: "image_large.png"
     },
     {id: "3",
         title: "Project 3",
