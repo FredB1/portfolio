@@ -23,5 +23,5 @@
 }
 
 .hero__image {
-  @apply max-w-full max-h-full object-cover;
+  @apply w-2/3 max-h-full object-cover;
 }

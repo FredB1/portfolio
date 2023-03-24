@@ -21,7 +21,7 @@ const projects = [
         technologies: ["Vue.js", "Nuxt.js", "Firebase"],
         url: "https://project3.com",
         role: "Frontend Developer",
-        image: "project3.png"
+        image: "ghw.png"
     },
     {id: "4",
         title: "E-commerce Website Redesign",
