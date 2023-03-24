@@ -6,3 +6,7 @@
   .about_paragraph {
     @apply text-lg text-gray-700 leading-relaxed pt-4 w-2/5 mx-auto text-justify;
   }
+.headshot{
+  @apply rounded-full w-1/4 h-1/4 mx-auto my-5;
+  box-shadow: 0 0 0 10px #865544, 0 0 0 15px #AD795F;
+}

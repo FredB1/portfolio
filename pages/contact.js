@@ -4,7 +4,6 @@ import Navbar from './components/navbar'
 
 const Contact = () => {
     return (<div>
-
         <Navbar />
         <div className="container mx-auto px-4 py-12">
             <h2 className="text-3xl font-semibold mb-6">Get in touch</h2>
