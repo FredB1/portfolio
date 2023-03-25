@@ -6,6 +6,8 @@ const about = () => {
     <div>
       <Navbar />
       <h3 className={styles.about_heading}>About Me</h3>
+      <img src='headshot.jpg' alt='Headshot' className={styles.headshot}></img>
+
       <p className={styles.about_paragraph}>
         As a dedicated junior computer science student, I have honed my skills in freelance web development, gaining valuable hands-on experience that complements my academic pursuits.
         I take pride in my strong interpersonal skills and innate passion for collaboration, which enable me to work effectively with diverse teams and tackle complex challenges.
