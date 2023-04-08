@@ -33,7 +33,7 @@ const projects = [
         technologies: ["React", "Tailwind", "Next.JS"],
         url: "https://project3.com",
         role: "Full Stack Developer",
-        image: "project3.png"
+        image: "changes.png"
     }
 ];
 

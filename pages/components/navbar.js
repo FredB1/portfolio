@@ -5,7 +5,7 @@ const Navbar = () => {
         <div>
             <nav class="bg-blue-500 text-black">
                 <div class="container mx-auto px-6 py-4 flex items-center">
-                    <a href="#" class="text-3xl font-semibold">Fred Burke</a>
+                    <a href="#" class="text-5xl font-semibold font-Bangers tracking-custom">Fred Burke</a>
                     <div class="ml-auto flex items-center">
                         <a href="#" class="px-3 py-2 rounded-md text-sm font-medium leading-5 text-black-700 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
                         <a href="#" class="px-3 py-2 rounded-md text-sm font-medium leading-5 text-black-700 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Blog</a>

@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-      <Hero images={projects} interval={3000}/>
+      <Hero data={projects} interval={5000}/>
       <div className="mt-4">
         <a href="about" className="bg-blue-500 text-white p-2 rounded-lg">About</a>
         <a href="contact" className="bg-blue-500 text-white p-2 rounded-lg">Contact</a>
