@@ -26,3 +26,11 @@
 .hero__image {
   @apply w-full h-full object-contain object-center;
 }
+.tech_icons {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}

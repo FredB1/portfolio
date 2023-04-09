@@ -3,7 +3,7 @@ const projects = [
         id: "1",
         title: "Way Too Tech",
         summary: "This is a summary of project 1",
-        technologies: ["Wordpress", "PHP", "CSS", "MySQL"],
+        technologies: ["WordPress", "PHP", "CSS", "MySQL"],
         url: "https://project1.com",
         role: "Full Stack Developer",
         image: "image_original.png"
@@ -21,7 +21,7 @@ const projects = [
         id: "3",
         title: "George H Wood",
         summary: "This is a summary of project 3",
-        technologies: ["Wordpress", "PHP", "CSS"],
+        technologies: ["WordPress", "PHP", "CSS"],
         url: "https://project3.com",
         role: "Frontend Developer",
         image: "ghw.png"
@@ -30,8 +30,8 @@ const projects = [
         id: "4",
         title: "Portfolio",
         summary: "This is a summary of project 4",
-        technologies: ["React", "Tailwind", "Next.JS"],
-        url: "https://project3.com",
+        technologies: ["React", "Tailwind", "Nextjs"],
+        url: "https://project4.com",
         role: "Full Stack Developer",
         image: "changes.png"
     }
