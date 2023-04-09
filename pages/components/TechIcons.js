@@ -16,7 +16,7 @@ const techIconMap = {
 };
 const TechIcons = ({ tech }) => {
     return (
-        <span className="inline-block p-1 text-lg font-bold text-white bg-gray-600 rounded">
+        <span className="inline-block p-1 text-5xl font-bold text-white bg-gray-600 rounded">
             {techIconMap[tech]}
         </span>
     )
