@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import styles from './hero.module.css';
 import TechIcons from './TechIcons';
+import Link from 'next/link';
 
 const Hero = ({ data, interval }) => {
   const [currentIndex, setcurrentIndex] = useState(0);
@@ -26,13 +27,18 @@ const Hero = ({ data, interval }) => {
     <div className={styles.hero}>
       <div className={styles.hero__wrapper}>
         <FiChevronLeft className={styles.hero__button} onClick={previousImage} />
-        <img src={data[currentIndex].image} alt={data[currentIndex].title} className={styles.hero__image} />
+        <Link href={data[currentIndex].url}>
+          <img src={data[currentIndex].image} alt={data[currentIndex].title} className={styles.hero__image} />
+        </Link>
         <FiChevronRight className={styles.hero__button} onClick={nextImage} />
         <div className={styles.tech_icons}>
           {data[currentIndex].technologies.map((tech, index) => (
             <TechIcons key={index} tech={tech} />
           ))}</div>
       </div>
+      <Link href={data[currentIndex].url} className={styles.link_position}>
+        Click here to find out more about the {data[currentIndex].title} project.
+      </Link>
     </div>
   );
 };

@@ -34,3 +34,12 @@
   flex-wrap: wrap;
   gap: 0.5rem;
 }
+.link_position {
+  position: absolute;
+  bottom: -3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: black;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
