@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 import projects from '../../data/data';
 import Navbar from '../components/navbar'
+import React from 'react';
 
 
 export async function getStaticPaths() {
@@ -25,6 +26,25 @@ export async function getStaticProps({ params }) {
 }
 
 const ProjectPage = ({ project }) => {
+    const summaryWithLineBreaks = project.summary.split("\\n").map((paragraph, index) => {
+        if (index === 0 && /^v\d/.test(paragraph)) {
+            return (
+                <React.Fragment key={index}>
+                    <p><b>{paragraph}</b></p>
+                    <br />
+                </React.Fragment>
+            );
+        } else {
+            return (
+                <React.Fragment key={index}>
+                    <p>{paragraph}</p>
+                    <br />
+                </React.Fragment>
+            );
+        }
+    });
+
+
     return (
         <div>
             <Navbar />
@@ -32,8 +52,8 @@ const ProjectPage = ({ project }) => {
                 <h1 className="text-5xl font-bold my-8">{project.title}</h1>
                 <img src={`/${project.image}`} alt={project.title}
                     className="w-2/4 mx-auto h-auto" />
-                <div className="bg-white w-full max-w-prose p-4 my-4 rounded shadow">
-                    <p>{project.summary}</p>
+                <div className="bg-white w-full max-w-prose p-4 my-4 text-justify rounded shadow">
+                    {summaryWithLineBreaks}
                 </div>
             </div>
         </div>
