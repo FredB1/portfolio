@@ -9,12 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
+    "@tabler/icons": "^2.15.0",
     "next": "13.1.4",
-    "nodemailer": "^6.9.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-google-recaptcha": "^2.1.0",
-    "react-icons": "^4.8.0"
+    "react-icons": "^4.8.0",
+    "tabler": "^1.0.0-alpha.8"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
