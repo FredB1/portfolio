@@ -39,6 +39,9 @@ export async function getStaticProps() {
     const projects = data;
 
     return {
-        props: { projects },
+        props: {
+            projects,
+            title: 'Projects', // Set the title here
+        }
     };
 }

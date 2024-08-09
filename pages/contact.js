@@ -14,8 +14,8 @@ const Contact = () => {
 
     useEffect(() => {
         setCanSubmit(canSubmitForm());
-      }, []);
-      
+    }, []);
+
     const handleNameChange = (e) => {
         setName(e.target.value);
     };
@@ -50,7 +50,7 @@ const Contact = () => {
         if (recaptchaToken) {
             const serviceId = 'service_8brirop';
             const templateId = 'template_wuxi2kc';
-            const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+            const publicKey = process.env.EMAILJS_PUBLIC_KEY;
 
             const templateParams = {
                 from_name: name,
@@ -121,7 +121,7 @@ const Contact = () => {
                         ></textarea>
                     </div>
                     <ReCAPTCHA
-                        sitekey="6LfHrnYlAAAAADRJ2xalnoEbbitFPlqJsugg4qxr"
+                        sitekey={process.env.NEXT_PUBLIC_RECAPTCHA}
                         onChange={handleRecaptchaChange}
                         render={(props) => <div {...props} />}
                     />
@@ -142,3 +142,12 @@ const Contact = () => {
 };
 
 export default Contact;
+
+export async function getStaticProps() {
+
+    return {
+        props: {
+            title: 'Contact', // Set the title here
+        }
+    };
+}

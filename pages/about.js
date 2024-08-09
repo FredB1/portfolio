@@ -1,9 +1,16 @@
 import Navbar from './components/navbar'
 import styles from '../styles/About.module.css'
 import React, { useState, useEffect } from 'react';
-const about = () => {
+import Head from 'next/head'
+const about = ({ pageProps }) => {
   return (
     <div>
+      <Head>
+        <meta name="description" content="About Me" />
+        <meta name="keywords" content="About Me" />
+        <meta name="twitter:description" content="About Me" />
+        <meta name="og:description" content="About Me" />
+      </Head>
       <Navbar />
       <h3 className={styles.about_heading}>About Me</h3>
       <img src='headshot.jpg' alt='Headshot' className={styles.headshot}></img>
@@ -18,3 +25,11 @@ const about = () => {
 }
 
 export default about
+
+export async function getStaticProps() {
+  return {
+    props: {
+      title: 'About', // Set the title here
+    },
+  };
+}

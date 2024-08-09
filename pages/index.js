@@ -8,9 +8,7 @@ export default function Home() {
 
   return (
     <div>
-      <Head>
-        <title>{process.env.NEXT_PUBLIC_APP_ID}</title>
-      </Head>
+
       <Navbar />
       <Hero data={projects} interval={5000} />
     </div>

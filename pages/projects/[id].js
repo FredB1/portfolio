@@ -21,6 +21,7 @@ export async function getStaticProps({ params }) {
     return {
         props: {
             project,
+            title: project.title,
         },
     };
 }
