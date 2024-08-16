@@ -32,3 +32,11 @@ border: 1px solid #00ff339e;
         transform: scale3d(1, 1, 1);
     }
 }
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 15px;
+        grid-row-gap: 10px;
+        padding: 1.5em;
+    }
+  }
