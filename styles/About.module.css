@@ -4,9 +4,15 @@
   }
   
   .about_paragraph {
-    @apply text-lg text-gray-700 leading-relaxed pt-4 w-2/5 mx-auto text-justify;
+    @apply text-lg text-gray-700 leading-relaxed pt-4 w-2/5 mx-auto text-justify indent-4;
+    
   }
 .headshot{
   @apply rounded-full w-1/4 h-1/4 mx-auto my-5;
   box-shadow: 0 0 0 10px #865544, 0 0 0 15px #AD795F;
+}
+@media (max-width: 768px) {
+  .about_paragraph {
+    width: 85%; /* Set to 85% for better readability on mobile */
+  }
 }

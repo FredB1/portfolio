@@ -1,18 +1,34 @@
-/* MyComponent.module.css */
-
 .hero {
-  @apply flex items-center justify-center bg-black w-full relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 100%;
   height: 75vh;
+  position: relative;
 }
 
 .hero__wrapper {
-  @apply flex items-center justify-between w-full relative h-full;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
   padding: 0 20px;
   overflow: hidden;
+  position: relative;
 }
 
 .hero__button {
-  @apply text-4xl cursor-pointer text-white bg-black bg-opacity-50 p-2 rounded-full mx-2 select-none z-10 transition-transform ease-in-out duration-300;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 8px;
+  border-radius: 50%;
+  margin: 0 8px;
+  z-index: 10;
+  transition: transform 0.3s ease-in-out;
 }
 
 .hero__button:hover {
@@ -20,12 +36,16 @@
 }
 
 .hero__button:active {
-  @apply bg-blue-500;
+  background-color: #3b82f6;
 }
 
 .hero__image {
-  @apply w-full h-full object-contain object-center;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
 }
+
 .tech_icons {
   position: absolute;
   bottom: 1rem;
@@ -34,6 +54,7 @@
   flex-wrap: wrap;
   gap: 0.5rem;
 }
+
 .link_position {
   position: absolute;
   bottom: -3rem;
@@ -42,4 +63,38 @@
   color: black;
   font-size: 1.5rem;
   text-decoration: none;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  .hero {
+    height: 50vh; /* Reduce height on mobile */
+  }
+
+  .hero__wrapper {
+    padding: 0 10px; /* Reduce padding on mobile */
+  }
+
+  .hero__button {
+    font-size: 2rem;
+    padding: 4px; /* Smaller buttons on mobile */
+  }
+
+  .hero__image {
+    width: 100%;
+    height: auto; /* Ensure image takes full width and maintains aspect ratio on mobile */
+  }
+
+  .tech_icons {
+    bottom: 2vh; /* Adjust position to be a certain distance from the bottom of the screen */
+    left: 50%;
+    transform: translateX(-50%); /* Center on mobile */
+    justify-content: center;
+    width: 100%;
+  }
+
+  .link_position {
+    bottom: -20vh; /* Adjust to be 5% of the viewport height from the bottom */
+    font-size: 1.2rem; /* Smaller font on mobile */
+  }
 }
