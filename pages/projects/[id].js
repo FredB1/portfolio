@@ -1,6 +1,5 @@
 import { useRouter } from 'next/router';
 import projects from '../../data/data';
-import Navbar from '../components/navbar'
 import React from 'react';
 
 
@@ -48,7 +47,6 @@ const ProjectPage = ({ project }) => {
 
     return (
         <div>
-            <Navbar />
             <div className="flex flex-col items-center mt-8">
                 <h1 className="text-5xl font-bold my-8">{project.title}</h1>
                 <img src={`/${project.image}`} alt={project.title}
