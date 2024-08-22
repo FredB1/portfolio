@@ -1,5 +1,4 @@
-import Navbar from './components/navbar';
-import styles from './services.module.css';
+import styles from '../styles/services.module.css';
 
 const Services = () => {
     const data = [
@@ -37,7 +36,6 @@ const Services = () => {
 
     return (
         <div>
-            <Navbar />
             <h3 className={`${styles.heading} text-center text-2xl font-bold`}>Services</h3>
             <div className={styles.container}>
                 {servicesData}

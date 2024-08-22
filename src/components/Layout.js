@@ -1,10 +1,11 @@
-import Header from "./Header";
 import React from "react";
+import Navbar from "./navbar";
 
-const Layout = () => {
+const Layout = ({ children }) => {
   return (
     <div>
-      <Header />
+      <Navbar />
+      <main>{children}</main>
     </div>
   );
 };

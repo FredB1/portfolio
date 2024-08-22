@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import '../styles/globals.css';
 import '../styles/fonts.css';
-
+import Layout from '../src/components/Layout';
 function MyApp({ Component, pageProps }) {
   const title = pageProps.title
     ? `${pageProps.title} | ${process.env.NEXT_PUBLIC_APP_ID}`
@@ -23,7 +23,9 @@ function MyApp({ Component, pageProps }) {
         <meta name="twitter:description" content="Welcome to my site." />
         <meta name="twitter:image" content="/default-twitter-image.jpg" />
       </Head>
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </>
   );
 }

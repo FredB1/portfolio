@@ -1,4 +1,3 @@
-import Navbar from './components/navbar'
 import styles from '../styles/About.module.css'
 import React, { useState, useEffect } from 'react';
 import Head from 'next/head'
@@ -11,7 +10,6 @@ const about = ({ pageProps }) => {
         <meta name="twitter:description" content="About Me" />
         <meta name="og:description" content="About Me" />
       </Head>
-      <Navbar />
       <h3 className={styles.about_heading}>About Me</h3>
 
       <section className={styles.about_paragraph}>

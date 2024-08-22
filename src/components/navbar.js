@@ -48,12 +48,7 @@ const Navbar = () => {
                                     <path d="M16 16v-3a2 2 0 00-4 0" />
                                 </svg>
                             </a>
-                            <a href="../FredBurkeResume315.pdf" download="FredBurkeResume315.pdf" aria-label="Resume">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                    <path d="M14 3v4a1 1 0 001 1h4" />
-                                    <path d="M11.5 21h-4.5a2 2 0 01-2-2v-14a2 2 0 012-2h7l5 5v5m-5 6h7m-3-3l3 3-3 3" />
-                                </svg>
-                            </a>
+
                         </div>
                     </div>
                 </div>

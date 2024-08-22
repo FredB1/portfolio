@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Navbar from './components/navbar'
 import ReCAPTCHA from 'react-google-recaptcha';
 import { send } from '@emailjs/browser';
 
@@ -76,7 +75,6 @@ const Contact = () => {
 
     return (
         <div>
-            <Navbar />
             <div className="container mx-auto px-4 py-12">
                 <h2 className="text-3xl font-semibold mb-6">Get in touch</h2>
                 {isFormSubmitted ? (
