@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
     : process.env.NEXT_PUBLIC_APP_ID;
   return (
     <>
-
+      ``
       <Head>
         <title>{title}</title>
         <meta name="description" content="Welcome to my awesome site." />
@@ -29,9 +29,9 @@ function MyApp({ Component, pageProps }) {
       <Layout>
         <Component {...pageProps} />
       </Layout>
-      <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_G_TAG_MANAGER} />
+      <GoogleTagManager gtmId="AW-803265503" />
 
-      <noscript><iframe src='https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_G_TAG_MANAGER}'
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=AW-803265503"
         height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
     </>
   );
