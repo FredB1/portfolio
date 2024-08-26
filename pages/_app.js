@@ -8,7 +8,6 @@ function MyApp({ Component, pageProps }) {
   const title = pageProps.title
     ? `${pageProps.title} | ${process.env.NEXT_PUBLIC_APP_ID}`
     : process.env.NEXT_PUBLIC_APP_ID;
-  console.log(process.env.NEXT_PUBLIC_G_TAG_MANAGER)
   return (
     <>
 
@@ -32,6 +31,8 @@ function MyApp({ Component, pageProps }) {
       </Layout>
       <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_G_TAG_MANAGER} />
 
+      <noscript><iframe src='https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_G_TAG_MANAGER}'
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </>
   );
 }
