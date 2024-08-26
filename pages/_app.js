@@ -2,12 +2,16 @@ import Head from 'next/head';
 import '../styles/globals.css';
 import '../styles/fonts.css';
 import Layout from '../src/components/Layout';
+import { GoogleTagManager } from '@next/third-parties/google'
+
 function MyApp({ Component, pageProps }) {
   const title = pageProps.title
     ? `${pageProps.title} | ${process.env.NEXT_PUBLIC_APP_ID}`
     : process.env.NEXT_PUBLIC_APP_ID;
   return (
     <>
+      <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_G_TAG_MANAGER} />
+
       <Head>
         <title>{title}</title>
         <meta name="description" content="Welcome to my awesome site." />
