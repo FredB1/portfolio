@@ -16,7 +16,7 @@ const Services = () => {
         },
         {
             title: "Web Development",
-            points: ["Frontend Development", "Backend Development", "Database Management"]
+            points: ["Frontend Development", "Backend Development", "Database Management"].sort()
         },
         // Add more services here if needed
     ];

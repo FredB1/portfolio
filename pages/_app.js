@@ -10,7 +10,6 @@ function MyApp({ Component, pageProps }) {
     : process.env.NEXT_PUBLIC_APP_ID;
   return (
     <>
-      ``
       <Head>
         <title>{title}</title>
         <meta name="description" content="Welcome to my awesome site." />
