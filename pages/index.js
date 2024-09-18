@@ -9,11 +9,16 @@ export default function Home() {
   return (
     <div>
       <div class={styles.indexContent}>
-        <h1>Unlock More Customers, Maximize Revenue, Secure Your Future.</h1>
+        <ul>
+          <li>Unlock More Customers</li>
+          <li>Maximize Revenue</li>
+          <li>Secure Your Future</li>
+        </ul>
         <p>Don’t let missed opportunities cost you. Partner with me to drive growth, capture market share, and ensure long-term success.</p>
         <p>With proven strategies and cutting-edge solutions, I help businesses like yours attract more customers, boost sales, and stay ahead of the competition. Your success is my mission.</p>
         <Link href="/services" className={styles.indexBtn}>Learn More</Link>
       </div>
+      <h2 className={styles.subHead}>Check out more of my past projects below</h2>
       <Hero data={projects} interval={5000} />
     </div>
 

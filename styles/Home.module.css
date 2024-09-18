@@ -127,13 +127,24 @@
   color: #333; /* Dark color for contrast */
   margin-bottom: 20px; /* Space below the headline */
 }
-
+.subHead{
+  font-size: 2em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
 /* Paragraph styles */
 .indexContent p {
   font-size: 1.2em; /* Slightly larger text for readability */
   color: #555; /* Medium gray for secondary text */
   margin-bottom: 15px; /* Space below each paragraph */
   line-height: 1.6; /* Comfortable line spacing */
+}
+.indexContent li{
+  font-size: 2em;
+  font-weight: bold;
+  color: #333;
 }
 /* Button styles */
 .indexBtn {
