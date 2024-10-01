@@ -22,6 +22,19 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:image" content="" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={process.env.NEXT_PUBLIC_APP_ID || process.env.APP_ID} />
+        <meta name="twitter:description" content="Welcome to my site." />
+        <meta name="twitter:image" content="/default-twitter-image.jpg" />
+        {/* Microsoft Clarity Script */}
+        <script
+          type="text/javascript"
+          dangerouslySetInnerHTML={{
+            __html: `(function(c,l,a,r,i,t,y){
+                      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+                    })(window, document, "clarity", "script", "o9aoliaur8");`,
+          }}
+        />
         <meta name="twitter:description" content="Welcome to the site of Fred Burke, your trusted technology partner delivering custom software and web development solutions, backed by years of experience and a keen eye for cybersecurity risks." />
         <meta name="twitter:image" content="" />
       </Head>
