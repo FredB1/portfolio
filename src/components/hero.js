@@ -53,7 +53,7 @@ const Hero = ({ data = [], interval = 3000 }) => {
         </div>
       </div>
       <Link href={data[currentIndex].url} className={styles.link_position}>
-        Click here to find out more about the {data[currentIndex].title} project.
+        Click here to find out more about the <span className={styles.project_title}>{data[currentIndex].title}</span> project.
       </Link>
     </div>
   );

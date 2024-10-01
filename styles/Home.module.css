@@ -11,7 +11,16 @@
   justify-content: center;
   align-items: center;
 }
-
+.landingH h1{
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center      ;
+}
+.landingH h2{
+  font-weight: bold;
+  font-size: 1.25em;
+  text-align: center      ;
+}
 .footer {
   display: flex;
   flex: 1;
@@ -167,7 +176,13 @@
 .indexBtn:hover {
   background-color: #0056b3; /* Darker shade of blue on hover */
 }
-
+.more_info p{
+text-align: center;
+font-size: 1.1em;
+}
+.more_info a{
+  color: #0056b3;
+}
 /* HeartBeat animation */
 @keyframes heartBeat {
   0% {
