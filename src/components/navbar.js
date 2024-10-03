@@ -10,7 +10,7 @@ const Navbar = () => {
             <nav className="bg-blue-500 text-black">
                 <div className="container mx-auto px-6 py-4 flex items-center justify-between">
                     <Link href="/" className="text-5xl font-semibold font-Bangers tracking-custom">
-                        Fred Burke
+                        <h1>Fred Burke</h1>
                     </Link>
                     <div className="hidden md:flex items-center space-x-6">
                         <Link href="/about" className="text-3xl font-medium hover:text-white">About</Link>

@@ -1,7 +1,7 @@
 import { sql } from '@vercel/postgres';
 
 function generateSiteMap(posts) {
-    return `<?xml version="1.0" encoding="UTF-8"?>
+  return `<?xml version="1.0" encoding="UTF-8"?>
    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
      <!-- Manually set the static URLs -->
      <url>
@@ -16,6 +16,21 @@ function generateSiteMap(posts) {
    <url>
    <loc>https://fredb.dev/services</loc>
  </url>
+      <url>
+        <loc>https://fredb.dev/services/application-development</loc>
+      </url>
+       <url>
+   <loc>https://fredb.dev/services/mobile-applications</loc>
+ </url>
+  <url>
+   <loc>https://fredb.dev/services/web-development</loc>
+ </url>
+  <url>
+   <loc>https://fredb.dev/services/software-development</loc>
+ </url>
+  <url>
+   <loc>https://fredb.dev/services/support-and-miscellaneous</loc>
+ </url>
  <url>
  <loc>https://fredb.dev/projects</loc>
 </url>
@@ -25,24 +40,24 @@ function generateSiteMap(posts) {
 }
 
 function SiteMap() {
-    // getServerSideProps will handle everything, so this component won't render anything
-    return null;
+  // getServerSideProps will handle everything, so this component won't render anything
+  return null;
 }
 
 export async function getServerSideProps({ res }) {
-    // Fetch the URLs for your dynamic pages from PostgreSQL
+  // Fetch the URLs for your dynamic pages from PostgreSQL
 
-    // Generate the XML sitemap with the posts data
-    const sitemap = generateSiteMap();
+  // Generate the XML sitemap with the posts data
+  const sitemap = generateSiteMap();
 
-    // Set the response headers and send the XML
-    res.setHeader('Content-Type', 'text/xml');
-    res.write(sitemap);
-    res.end();
+  // Set the response headers and send the XML
+  res.setHeader('Content-Type', 'text/xml');
+  res.write(sitemap);
+  res.end();
 
-    return {
-        props: {},
-    };
+  return {
+    props: {},
+  };
 }
 
 export default SiteMap;

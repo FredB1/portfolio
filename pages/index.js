@@ -57,16 +57,16 @@ export default function Home() {
           dangerouslySetInnerHTML={addReviewJsonLd()}
           key="review-jsonld"
         />
-      </Head><div className={styles.landingH}>
-
+      </Head>
+      <div className={styles.landingH}>
         <h1>Fred Burke is your trusted technology partner!</h1>
         <h2>Delivering custom software and web development solutions backed by years of experience and a keen eye for cybersecurity risks</h2>
       </div>
       <div class={styles.indexContent}>
         <ul>
-          <li>Unlock More Customers</li>
-          <li>Maximize Revenue</li>
-          <li>Secure Your Future</li>
+          <li><h3>Unlock More Customers</h3></li>
+          <li><h3>Maximize Revenue</h3></li>
+          <li><h3>Secure Your Future</h3></li>
         </ul>
         <p>Don’t let missed opportunities cost you. Partner with me to drive growth, capture market share, and ensure long-term success.</p>
         <p>With proven strategies and cutting-edge solutions, I help businesses like yours attract more customers, boost sales, and stay ahead of the competition. Your success is my mission.</p>
@@ -75,9 +75,10 @@ export default function Home() {
       <h2 className={styles.subHead}>Check out more of my past projects below</h2>
       <Hero data={projects} interval={5000} />
       <div className={styles.more_info}>
-        <p>Looking for more details about what I offer? Visit my <Link href="/services">Services</Link> page to learn more about how I can help you with custom software, web development, and tailored business solutions.</p>
-        <p>Curious about the work I&apos;ve done for other businesses? Head over to the <Link href="/projects">Projects</Link> page to explore case studies and examples of past work.</p>
-        <p>If you&apos;re ready to take the next step and discuss how we can work together, feel free to <Link href="/contact">get in touch</Link> for a consultation. Let&apos;  s turn your vision into reality.</p>
+        <p>Looking for more details about what I offer? Visit my <Link href="/services">Services</Link> page to learn more about how I can help you with custom software, web development, and tailored business solutions that streamline operations and enhance your competitive edge.</p>
+        <p>Curious about the work I&apos;ve done for other businesses? Head over to the <Link href="/projects">Projects</Link> page to explore case studies, client success stories, and examples of innovative projects that have delivered measurable results.</p>
+        <p>When it comes to technology, I believe in building secure, scalable, and efficient solutions that drive growth. Whether you need a new website, a custom application, or a comprehensive software system, I&apos;m here to guide you through the process from start to finish.</p>
+        <p>If you&apos;re ready to take the next step and discuss how we can work together, feel free to <Link href="/contact">get in touch</Link> for a consultation. Let&apos;s collaborate to turn your vision into reality, backed by years of experience and a commitment to excellence.</p>
       </div>
 
     </div>
