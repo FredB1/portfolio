@@ -1,6 +1,8 @@
-import { sql } from '@vercel/postgres';
+import fs from 'fs';
+import path from 'path';
 
-function generateSiteMap(posts) {
+// Function to generate the XML sitemap (without projects map)
+function generateSiteMap() {
   return `<?xml version="1.0" encoding="UTF-8"?>
    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
      <!-- Manually set the static URLs -->
@@ -31,23 +33,18 @@ function generateSiteMap(posts) {
   <url>
    <loc>https://fredb.dev/services/support-and-miscellaneous</loc>
  </url>
- <url>
- <loc>https://fredb.dev/projects</loc>
-</url>
-    
    </urlset>
  `;
 }
 
+// Static Next.js component
 function SiteMap() {
-  // getServerSideProps will handle everything, so this component won't render anything
   return null;
 }
 
+// Generate the sitemap and send it
 export async function getServerSideProps({ res }) {
-  // Fetch the URLs for your dynamic pages from PostgreSQL
-
-  // Generate the XML sitemap with the posts data
+  // Generate the XML sitemap without dynamic content
   const sitemap = generateSiteMap();
 
   // Set the response headers and send the XML
