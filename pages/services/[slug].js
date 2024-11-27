@@ -11,6 +11,10 @@ const ServiceDetail = ({ service }) => {
             <Head>
                 <title>{service.title} | Fred Burke</title>
                 <meta property="og:title" content={service.title} key="title" />
+                <meta name="description" content={service.description.slice(0, 160)} />
+                <meta name="robots" content="index, follow" />
+                <link rel="canonical" href={`https://fredb.dev/services/${service.title.toLowerCase().replace(/ /g, '-')}`} />
+
             </Head>
             <article className={styles.article} dangerouslySetInnerHTML={{ __html: service.description }} />
 
