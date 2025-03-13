@@ -5,11 +5,10 @@ const ServiceDetail = ({ service }) => {
     if (!service) {
         return <h1>Service not found</h1>;
     }
-
     return (
         <div>
             <Head>
-                <title>{service.title} | Fred Burke</title>
+                <title>{`${service.title} | Fred Burke`}</title>
                 <meta property="og:title" content={service.title} key="title" />
                 <meta name="description" content={service.description.slice(0, 160)} />
                 <meta name="robots" content="index, follow" />
