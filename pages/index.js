@@ -9,39 +9,87 @@ export default function Home() {
     return {
       __html: `{
         "@context": "https://schema.org",
-        "@type": "Service",
-        "name": "Web Development",
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.8",
-          "reviewCount": "25"
+        "@type": "LocalBusiness",
+        "name": "Fred Burke Web Development",
+        "description": "Custom web development and software solutions for small businesses and entrepreneurs. Specializing in React, Node.js, and WordPress.",
+        "image": "https://fredb.dev/favicon.ico",
+        "url": "https://fredb.dev",
+        "telephone": "+1-347-635-3817",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "72-11 Austin St",
+          "addressLocality": "Forest Hills",
+          "addressRegion": "NY",
+          "postalCode": "11433",
+          "addressCountry": "US"
         },
-        "review": [
+        "priceRange": "$$",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "40.719276",
+          "longitude": "-73.842174"
+        },
+        "openingHoursSpecification": [
           {
-            "@type": "Review",
-            "author": {
-              "@type": "Person",
-              "name": "Victor Lucas"
-            },
-            "reviewRating": {
-              "@type": "Rating",
-              "ratingValue": "5",
-              "bestRating": "5"
-            },
-            "reviewBody": "Fred delivered an exceptional website that significantly boosted our efficiency."
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "09:00",
+            "closes": "17:00"
+          }
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/in/fredb7",
+          "https://github.com/fredb1"
+        ],
+        "serviceType": "Technology Services",
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Application Development",
+            "description": "Custom application development services to meet your business needs.",
+            "priceCurrency": "USD",
+            "price": "Varies by project"
           },
           {
-            "@type": "Review",
-            "author": {
-              "@type": "Person",
-              "name": "Micheal Moses"
-            },
-            "reviewRating": {
-              "@type": "Rating",
-              "ratingValue": "4.5",
-              "bestRating": "5"
-            },
-            "reviewBody": "Great service, highly professional and very thorough."
+            "@type": "Offer",
+            "name": "Mobile Applications",
+            "description": "Development of cross-platform and native mobile applications.",
+            "priceCurrency": "USD",
+            "price": "Varies by project"
+          },
+          {
+            "@type": "Offer",
+            "name": "Websites",
+            "description": "Professional web development services to build dynamic and secure websites.",
+            "priceCurrency": "USD",
+            "price": "Varies by project"
+          },
+          {
+            "@type": "Offer",
+            "name": "Software Development",
+            "description": "Full-stack software development tailored to your business requirements.",
+            "priceCurrency": "USD",
+            "price": "Varies by project"
+          },
+          {
+            "@type": "Offer",
+            "name": "Web Development",
+            "description": "Professional web development services to build dynamic and secure websites.",
+            "priceCurrency": "USD",
+            "price": "Varies by project"
+          },
+          {
+            "@type": "Offer",
+            "name": "Support and Miscellaneous",
+            "description": "Ongoing technical support and miscellaneous services to ensure your systems run smoothly.",
+            "priceCurrency": "USD",
+            "price": "Varies by project"
           }
         ]
       }`,

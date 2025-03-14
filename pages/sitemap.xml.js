@@ -9,26 +9,26 @@ function generateSiteMap() {
        <loc>https://fredb.dev/about</loc>
      </url>
      <url>
-     <loc>https://fredb.dev/contact</loc>
-   </url>
-   <url>
-   <loc>https://fredb.dev/services</loc>
- </url>
-      <url>
-        <loc>https://fredb.dev/services/application-development</loc>
-      </url>
-       <url>
-   <loc>https://fredb.dev/services/mobile-applications</loc>
- </url>
-  <url>
-   <loc>https://fredb.dev/services/web-development</loc>
- </url>
-  <url>
-   <loc>https://fredb.dev/services/software-development</loc>
- </url>
-  <url>
-   <loc>https://fredb.dev/services/support-and-miscellaneous</loc>
- </url>
+      <loc>https://fredb.dev/contact</loc>
+    </url>
+    <url>
+      <loc>https://fredb.dev/services</loc>
+    </url>
+    <url>
+      <loc>https://fredb.dev/services/application-development</loc>
+    </url>
+    <url>
+      <loc>https://fredb.dev/services/mobile-applications</loc>
+    </url>
+    <url>
+      <loc>https://fredb.dev/services/web-development</loc>
+    </url>
+    <url>
+      <loc>https://fredb.dev/services/software-development</loc>
+    </url>
+    <url>
+      <loc>https://fredb.dev/services/support-and-miscellaneous</loc>
+    </url>
    </urlset>
  `;
 }
